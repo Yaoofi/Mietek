@@ -1,7 +1,7 @@
 //API'S
 
-const discordToken = "MTE2MDI4NDczMDk0MDQ3MzU2Nw.GczTgb.lqt8XMzb9q5xdMj9iB9mtjksJV3facbJ5rmDDw";
-const geminiToken = "AIzaSyAcqPTzOuHubxe-jQlAxGnk5HJgglg71tU";
+const discordToken = "TOKEN";
+const geminiToken = "TOKEN";
 
 //some randomn't consts
 
