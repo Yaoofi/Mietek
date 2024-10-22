@@ -1,1 +1,1 @@
-This is code for discord bor called Mieczysław
+This is code for discord bot called Mieczysław
