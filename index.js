@@ -108,9 +108,15 @@ client.on("messageCreate", async (message) => {
         await message.channel.send("Umyj jajo, " + message.author.username);
     }
 
-    if (content === "Sigma") {
+    if (content === "sigma") {
         await message.channel.send("Notacja sigma pozwala nam zgrabnie i krótko zapisywać długie sumy.");
     }
+
+    if (content === "bombastycznie") {
+        const usr = message.author;
+        await usr.send("Będziesz palony żydzie");
+    }
+
 
     else if (message.author.username != "Mietek" && message.content.startsWith("!")){
         const result = await model.generateContent(context + "\nQuestion: " + content + "\nAnswer:");
@@ -118,7 +124,7 @@ client.on("messageCreate", async (message) => {
         if (result != null) {
             try{
                 const textResponse = await result.response.text();
-                await message.channel.send(textResponse);
+                await message.channel.send(textResponse+" daj pan 2 zł.");
             }
             catch(err){
                 await message.channel.send("Co tam pierdolisz? (AI się zjebało)");
